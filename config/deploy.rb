@@ -40,5 +40,5 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/puma", "tmp/sockets", 
 # set :ssh_options, verify_host_key: :secure
 
 
-# set :stages, ["production"]
+set :stages, ["production"]
 # set :rbenv_custom_path, '/usr/local/rbenv'
