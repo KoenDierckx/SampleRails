@@ -40,5 +40,14 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/puma", "tmp/sockets", 
 # set :ssh_options, verify_host_key: :secure
 
 
-set :stages, ["production"]
-# set :rbenv_custom_path, '/usr/local/rbenv'
+# set :stages, ["production"]
+
+set :rbenv_custom_path, '/usr/local/rbenv'
+
+# set :pty, true
+#
+# set :ssh_options, {
+#     forward_agent: true,
+#     auth_methods: ["privatekey"],
+#     keys: ["C:/Users/dierckxk/.ssh/id_rsa"]
+# }
