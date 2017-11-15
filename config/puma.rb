@@ -1,5 +1,8 @@
 #!/usr/bin/env puma
 
+# The directory to operate out of.
+# The default is the current directory.
+# directory '/var/www/hello.sas.vito.local'
 
 # Set the environment in which the rack's app will run. The value must be a string.
 environment ENV.fetch("RAILS_ENV") { "production" }
@@ -32,7 +35,7 @@ stdout_redirect 'shared/log/stdout', 'shared/log/stderr'
 # bind 'unix:///var/run/puma.sock'
 # bind 'unix:///var/run/puma.sock?umask=0111'
 # bind 'ssl://127.0.0.1:9292?key=path_to_key&cert=path_to_cert'
-bind 'unix://shared/tmp/sockets/puma.sock'
+# bind 'unix://shared/tmp/sockets/puma.sock'
 
 # Code to run before doing a restart. This code should close log files, database connections, etc.
 # This can be called multiple times to add code each time.
@@ -112,4 +115,4 @@ end
 # activate_control_app 'unix:///var/run/pumactl.sock'
 # activate_control_app 'unix:///var/run/pumactl.sock', { auth_token: '12345' }
 # activate_control_app 'unix:///var/run/pumactl.sock', { no_token: true }
-activate_control_app 'unix:/shared/tmp/puma/pumactl.sock'
+# activate_control_app 'unix:/shared/tmp/puma/pumactl.sock'
