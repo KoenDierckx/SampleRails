@@ -51,3 +51,10 @@ set :rbenv_custom_path, '/usr/local/rbenv'
 #     auth_methods: ["privatekey"],
 #     keys: ["C:/Users/dierckxk/.ssh/id_rsa"]
 # }
+
+
+set :systemd_unit, -> { "#{fetch :application}" }
+set :systemd_use_sudo, true
+set :systemd_roles, %w(app)
+
+# policykit-1

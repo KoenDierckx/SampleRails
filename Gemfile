@@ -44,7 +44,8 @@ group :development do
   gem 'capistrano', '~> 3.6'
   gem 'capistrano-bundler', '~> 1.2'
   gem 'capistrano-rails', '~> 1.1'
-  gem 'capistrano-rbenv', '~> 2.0'
+  # gem 'capistrano-rbenv', '~> 2.0'
+  gem 'capistrano-systemd'
   gem 'capistrano-yarn' # In case you use the yarn package manager
-  gem 'capistrano3-puma'
+  # gem 'capistrano3-puma'
 end

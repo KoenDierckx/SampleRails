@@ -34,6 +34,8 @@ require "capistrano/bundler"
 require "capistrano/rails/assets"
 require "capistrano/rails/migrations"
 
+require "capistrano/systemd"
+
 # require 'capistrano/yarn' # In case you use the yarn package manager
 
 # require "capistrano/passenger"
